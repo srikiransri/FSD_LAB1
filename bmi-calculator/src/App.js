@@ -114,7 +114,7 @@ function App() {
         </div>
       </div>
       <div className="watermark">
-        <p>Jyostna's</p>
+        <p>srikiran's</p>
       </div>
     </div>
   );
