@@ -3,10 +3,10 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 
 // MongoDB connection
-mongoose.connect('mongodb://localhost:27017/PUNEETHDB', {
+mongoose.connect('mongodb://localhost:27017/PADMAJASDB', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
@@ -27,8 +27,8 @@ app.use(bodyParser.json());
 
 // Insert static rows
 const staticUsers = [
-  { name: 'Puneeth', email: 'puneeth@example.com', age: 30 },
-  { name: 'PUNEETH', email: 'puneeth@example.com', age: 25 }
+  { name: 'Priya', email: 'priya@example.com', age: 30 },
+  { name: 'PADMAJA', email: 'padmaja@example.com', age: 25 }
 ];
 
 User.insertMany(staticUsers)
